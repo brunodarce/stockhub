@@ -1,0 +1,21 @@
+<!-- index.html (Página de Login) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Hub - Login</title>
+    <link rel="stylesheet" href="../css/style-light.css" id="theme-link">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Stock Hub</h2>
+        <input type="text" id="username" placeholder="Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+        <p id="error-msg" class="error"></p>
+        <button onclick="toggleTheme()">Alternar Tema</button>
+    </div>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
