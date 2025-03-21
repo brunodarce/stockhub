@@ -11,7 +11,7 @@ function login() {
     const user = true;
     if (user) {
         localStorage.setItem("loggedIn", "true");
-        window.location.href = "../html/dashboard.html";
+        window.location.href = "html/dashboard.html";
     } else {
         errorMsg.textContent = "Usuário ou senha incorretos!";
     }
@@ -19,11 +19,11 @@ function login() {
 
 function logout() {
     localStorage.removeItem("loggedIn");
-    window.location.href = "../html/index.html";
+    window.location.href = "html/index.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname.includes("dashboard.html") && !localStorage.getItem("loggedIn")) {
-        window.location.href = "../html/index.html";
+        window.location.href = "html/index.html";
     }
 });
