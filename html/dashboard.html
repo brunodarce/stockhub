@@ -1,0 +1,27 @@
+<!-- dashboard.html (Painel de Controle) -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Hub - Painel</title>
+    <link rel="stylesheet" href="../css/style-light.css" id="theme-link">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Stock Hub - Painel</h2>
+        <nav>
+            <ul>
+                <li><button onclick="navigate('cadastro')">Cadastrar Produto</button></li>
+                <li><button onclick="navigate('listar')">Listar Produtos</button></li>
+                <li><button onclick="navigate('vencimento')">Produtos Próximos do Vencimento</button></li>
+                <li><button onclick="navigate('estoque-baixo')">Alerta de Estoque Baixo</button></li>
+            </ul>
+        </nav>
+        <div id="content"></div>
+        <button onclick="toggleTheme()">Alternar Tema</button>
+        <button onclick="logout()">Sair</button>
+    </div>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
