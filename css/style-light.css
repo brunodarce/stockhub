@@ -1,19 +1,32 @@
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #222;
+    color: #fff;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
 button {
-    background-color: #007bff;
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px;
-    margin: 5px;
+    width: 200px;
+    text-align: left;
+    display: block;
+    margin: 5px auto;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1e7e34;
 }
